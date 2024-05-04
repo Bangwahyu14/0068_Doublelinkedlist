@@ -103,6 +103,14 @@ void deleteNode()
 			START->prev = NULL;
 		}
 	}
+	else
+	{
+		previous->next = current->next;
+		if (current->next != NULL)
+		{
+			current->next->prev = previous;
+		}
+	}
 
 
 
